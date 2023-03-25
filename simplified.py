@@ -24,7 +24,7 @@ def simlified_all_txt_files_in_dir(dir):
         full_name = os.path.join(dir, new_name)
         if os.path.isdir(full_name):
             simlified_all_txt_files_in_dir(full_name)
-        elif name.lower().endswith(".txt"):
+        elif name.lower().endswith(".txt") or name.lower().endswith(".md"):
             simplified_file(full_name)
 
 
